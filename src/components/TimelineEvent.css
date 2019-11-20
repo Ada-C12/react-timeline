@@ -7,7 +7,7 @@
 }
 
 .timeline-event:hover {
-  background-color: #F5F8FA;
+  background-color: rgba(121, 216, 216, 0.31);
 }
 
 .event-person {
