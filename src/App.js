@@ -24,6 +24,8 @@ function App() {
       <main className="App-main">
 
       {allTimelines_array}
+
+      <img src={logo} alt="logo" />
         
       </main>
     </div>
