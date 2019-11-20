@@ -6,9 +6,11 @@ import Timeline from './components/Timeline';
 
 function App() {
 
-  // console.log(timelineData);
+  console.log(timelineData);
   const events = timelineData.events;
-  const allTimelines = <Timeline allEventsHashes={events}/>;
+
+
+  const allTimelines_array = <Timeline events={events}/>;
 
   // let allTimelines = [];
   // for (let event of events) {
@@ -19,8 +21,7 @@ function App() {
   //   allTimelines.push (singleTimeline);
   // }
   
-  console.log("FINAL:", allTimelines);
-
+  console.log("FINAL:", allTimelines_array);
 
   // Customize the code below
   return (
@@ -30,7 +31,7 @@ function App() {
       </header>
       <main className="App-main">
 
-
+      <Timeline />
         
       </main>
     </div>
