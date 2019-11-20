@@ -10,7 +10,7 @@ function App() {
 
   const timelineEvents = timelineData.events.map((event, i) => {
     return (
-      <TimelineEvent person={event.person} status={event.status} time={event.time} />
+      <TimelineEvent key={i} person={event.person} status={event.status} time={event.time} />
     )
   });
 
