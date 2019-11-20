@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
-import TimelineEvent from './components/TimelineEvent';
 
 
 function App() {
@@ -16,10 +15,8 @@ function App() {
         <h1 className="App-title">Application title</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent
-          person = "kiki"
-          status = "ok"
-          timestamp = "2019-11-05"
+        <Timeline
+          events={timelineData.events}
         />
       </main>
     </div>
