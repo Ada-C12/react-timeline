@@ -7,7 +7,7 @@ const TimelineEvent = (props) => {
   return (
     <section>
       <h3>ONE EVENT</h3>
-      <p>This event on <Timestamp/>: {props.person} -- {props.status}</p>
+      <p>This event on <Timestamp time={props.timestamp}/>: {props.person} -- {props.status}</p>
     </section>
   )
 }

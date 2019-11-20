@@ -18,7 +18,7 @@ function App() {
         <TimelineEvent
           person="momo"
           status="cool"
-          timestamp="2019-11-09"
+          timestamp="2018-05-18T22:12:03Z"
         />
       </main>
     </div>
