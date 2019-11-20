@@ -4,7 +4,9 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = () => {
   
-  return;
+  return(
+    <TimelineEvent person="random" status="hello I'm doing fine" />
+  )
 }
 
 export default Timeline;
