@@ -18,10 +18,15 @@
 
 .event-status {
   grid-area: 2 / 1 / span 1 / -1;
+  word-wrap: break-word;
 }
 
 .event-time {
   grid-area: 1 / 2 / span 1 / span 1;
   margin-top: 0.5rem;
   text-align: right;
+}
+
+.thumb:hover {
+  cursor: pointer;
 }
