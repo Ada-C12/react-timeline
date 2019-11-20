@@ -26,3 +26,9 @@
   margin-top: 0.5rem;
   text-align: right;
 }
+
+.thumbs-up-icon:hover {
+  cursor: pointer;
+}
+
+/* .thumbs-up-icon */
