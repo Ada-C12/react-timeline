@@ -10,7 +10,7 @@ function App() {
   const event = {
     "person": "Adele Goldberg",
     "status": "In Smalltalk, everything happens somewhere else.",
-    "timeStamp": "2018-05-18T22:12:03Z"
+    "time": "2018-05-18T22:12:03Z"
   }
   // Customize the code below
   return (
@@ -19,7 +19,7 @@ function App() {
         <h1 className="App-title">Application title</h1>
       </header>
       <main className="App-main">
-      <TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp}/>
+      <TimelineEvent person={event.person} status={event.status} time={event.timeStamp}/>
       </main>
     </div>
   );
