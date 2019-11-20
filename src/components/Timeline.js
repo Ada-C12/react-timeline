@@ -3,11 +3,12 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = ({ events }) => {
-  console.log(events);
+  const line = event => <TimelineEvent event={event}/>;
+  
   return(
-    <section className='timeline'>
-      <TimelineEvent event={ events[0] } />
-    </section>
+    <ul className='timeline'>
+      { events.map(line) }
+    </ul>
   );
 }
 
