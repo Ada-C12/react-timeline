@@ -4,7 +4,13 @@ import Timestamp from './Timestamp';
 
 const TimelineEvent = (props) => {
   
-  return;
+  return (
+    <ul>
+      <li>{ props.person }</li>
+      <li>{ props.status }</li>
+      <li>{ props.timestamp }</li>
+    </ul>
+  );
 }
 
 export default TimelineEvent;
