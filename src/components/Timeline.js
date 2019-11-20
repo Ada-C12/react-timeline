@@ -8,18 +8,18 @@ const Timeline = (props) => {
 
   const eventComponents = events.map((event, i) => {
     return (
-      <li key={i}>
+      <p>
         <TimelineEvent 
           person = {event.person}
           status = {event.status}
           timestamp = {event.timeStamp}
         />
-      </li>
+      </p>
     )
   })
   
   return(
-    <section>
+    <section className="timeline">
       <ul>
         {eventComponents}
       </ul>
