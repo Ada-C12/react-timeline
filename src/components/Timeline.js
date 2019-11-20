@@ -6,7 +6,9 @@ const Timeline = (props) => {
   
   return (
     // <TimelineEvent person="Mamma Mia" status="heyyy!! it me!" time="2018-05-18T22:12:03Z"/>
-    props.events
+    <div className="timeline">
+      {props.events}
+    </div>
     )
 }
 
