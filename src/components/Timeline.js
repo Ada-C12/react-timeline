@@ -3,18 +3,6 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
-  // const allEvents = {
-  //   for (let i = 0; i < props.length; i += 1) {
-  //     return(
-  //       <section key={i}>
-  //       <li>
-  //         <TimelineEvent person={ props[i].person } status={props[i].status } timestamp={ props[i].timeStamp } />
-  //       </li>
-  //     </section>
-  //     );
-  //   };
-  // }
-
   const allEvents = props.events.map((event, i) => {
     return (
       // each child in a list must have a unique key
@@ -27,12 +15,12 @@ const Timeline = (props) => {
   });
 
   return (
-    <section>
+    <section className='timeline'>
       <ul>
           {allEvents}
       </ul>
     </section>
-  )
+  );
 }
 
 export default Timeline;
