@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import timelineData from './data/timeline.json';
-import Timeline from './components/Timeline';
+import TimelineEvent from './components/TimelineEvent';
 
 function App() {
   console.log(timelineData);
@@ -12,6 +12,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">Application title</h1>
+        <TimelineEvent />
       </header>
       <main className="App-main">
       </main>
