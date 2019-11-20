@@ -14,7 +14,7 @@ function App() {
         <h1 className="App-title">Ada Lovelace's social media feed</h1>
       </header>
       <main className="App-main">
-        <Timeline props = {timelineData} />
+        <Timeline events = {timelineData.events} />
       </main>
     </div>
   );

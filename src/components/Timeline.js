@@ -6,9 +6,9 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
   console.log(props);
-  let events = props["props"];
+  // let events = props;
 
-  let timelineEvents = events["events"].map(function (event, i) {
+  let timelineEvents = props["events"].map(function (event, i) {
     console.log(event)
     return (
       <li key={i}>
