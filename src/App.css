@@ -1,5 +1,5 @@
 .App-header {
-  background-color: #222;
+  background-color: #028174;
   padding-bottom: 0.5rem;
   color: white;
   position: fixed;
@@ -9,9 +9,10 @@
 .App-title {
   text-align: center;
   font-size: 1.5em;
+  color: white;
 }
 
 .App-main {
   padding-top: 7rem;
-  background-color: #E6ECF0;
+  background-color: #FFE3B3;
 }
