@@ -3,12 +3,14 @@ import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 import thumbsUp from './thumb-up.svg';
 
-function callAlert(e) {
-  e.preventDefault();
-  alert("this worked!!!!!");
-}
-
 const TimelineEvent = (props) => {
+  let clickCount = 0;
+
+  function callAlert(e) {
+    e.preventDefault();
+    clickCount += 1
+    alert(`you liked this ${clickCount} times!`);
+  };
   return (
     <div className="timeline-event">
       <p className="event-person"> Person: {props.person} </p>
