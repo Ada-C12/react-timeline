@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import timelineData from './data/timeline.json';
@@ -8,7 +8,14 @@ import TimelineEvent from './components/TimelineEvent';
 class App extends Component {
   render() {
     return (
-    <Timeline events={timelineData.events} />
+      <div className="App">
+        <header className="App-header">
+        <h1 className="App-title">Application title</h1>
+        </header>
+        <main className="App-main">
+        <Timeline events={timelineData.events} />
+        </main>
+      </div>
     )};
 }
 
