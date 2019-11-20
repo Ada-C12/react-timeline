@@ -5,15 +5,33 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 function App() {
-  console.log(timelineData);
+
+  // console.log(timelineData);
+  const events = timelineData.events;
+  const allTimelines = <Timeline allEventsHashes={events}/>;
+
+  // let allTimelines = [];
+  // for (let event of events) {
+  //   console.log(event.person);
+  //   console.log(event.status);
+  //   console.log(event.timeStamp);
+  //   let singleTimeline = <Timeline person={event.person} status={event.status} timestamp={event.timeStamp}/>
+  //   allTimelines.push (singleTimeline);
+  // }
+  
+  console.log("FINAL:", allTimelines);
+
 
   // Customize the code below
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">Talky Talk</h1>
       </header>
       <main className="App-main">
+
+
+        
       </main>
     </div>
   );
