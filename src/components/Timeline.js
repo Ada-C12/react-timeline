@@ -5,13 +5,13 @@ import TimelineEvent from './TimelineEvent';
 const Timeline = (props) => {
   const allEvents = props.events.map((event, i) => {
     return (
-      <li>
+      <p>
         <TimelineEvent
           person={event.person}
           status={event.status}
-          timestamp={event.timestamp}
+          timestamp={event.timeStamp}
         />
-      </li>
+      </p>
     )
   });
   return(
