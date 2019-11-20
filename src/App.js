@@ -5,14 +5,14 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 function App() {
+  // started with timelineData from json
+  // console.log(timelineData);
 
-  console.log(timelineData);
+  // take the events which is an array of single event hashes, send it off to Timeline component for processing
   const events = timelineData.events;
-
-
   const allTimelines_array = <Timeline events={events}/>;
   
-  console.log("FINAL:", allTimelines_array);
+  // console.log("FINAL:", allTimelines_array);
 
   // Customize the code below
   return (

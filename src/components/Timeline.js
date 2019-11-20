@@ -3,10 +3,11 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
-  let timelines = [];
+  // carrying in the attr called events from props
+  // events is an array of single event hashes
   let events = props.events;
 
-  timelines = events.map ((event, i) => {
+  let timelines = events.map ((event, i) => {
     return <TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp}/>;
   });
 
