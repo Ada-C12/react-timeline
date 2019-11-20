@@ -3,13 +3,11 @@ import "./TimelineEvent.css";
 import Timestamp from "./Timestamp";
 
 const TimelineEvent = props => {
-  let currentTime = Timestamp(Date.now());
-
   return (
-    <div>
-      <p>{props.person}</p>
-      <p>{props.status}</p>
-      <p>{currentTime}</p>
+    <div className="singleTimelineEvent">
+      <h3>{props.person}</h3>
+      <p className="timeStamp">{Timestamp(props.timeStamp)}</p>
+      <p className="status">{props.status}</p>
     </div>
   );
 };
