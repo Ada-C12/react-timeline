@@ -7,6 +7,8 @@ import Timeline from './components/Timeline';
 function App() {
   console.log(timelineData);
 
+  const postData = {person: 'Mr. Magoo', status: 'I can\'t see, but I have places to go!'}
+
   // Customize the code below
   return (
     <div className="App">
@@ -15,7 +17,9 @@ function App() {
       </header>
       <main className="App-main">
       </main>
+      <Timeline />
     </div>
+
   );
 }
 
