@@ -6,7 +6,7 @@ import Timeline from './components/Timeline';
 import TimelineEvent from './components/TimelineEvent';
 
 function App() {
-  console.log(timelineData);
+  // console.log(timelineData);
 
   // Customize the code below
   return (
@@ -17,7 +17,8 @@ function App() {
       
       <main className="App-main">
       </main>
-      <TimelineEvent person="Ada Lovelace" status="cruising" timestamp="stamp"/>
+      <Timeline events={timelineData.events} />
+      {/* <TimelineEvent person="Ada Lovelace" status="cruising" timestamp="stamp"/> */}
     </div>
     
   );
