@@ -4,7 +4,9 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = () => {
   
-  return;
+  return (
+    <TimelineEvent person="Mamma Mia" status="heyyy!! it me!" time="2018-05-18T22:12:03Z"/>
+    )
 }
 
 export default Timeline;
