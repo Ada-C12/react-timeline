@@ -7,7 +7,11 @@ const TimelineEvent = (props) => {
   let status = props.status
   let timestamp = <Timestamp time={props.timestamp}/>
   return(
-    <h2> {person} {timestamp} {status} </h2>
+    <section className="timeline-event">
+      <h3 className="event-person"> {person} </h3>
+      <p className="event-time"> {timestamp}</p>
+      <p className="event-status"> {status}</p>
+    </section>
   )
 
 }
