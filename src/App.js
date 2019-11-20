@@ -9,10 +9,10 @@ function App() {
   console.log(timelineData);
 
   const event = {
-      "person": "Adele Goldberg",
-      "status": "In Smalltalk, everything happens somewhere else.",
-      "timeStamp": "2018-05-18T22:12:03Z"
-    }
+    "person": "Adele Goldberg",
+    "status": "In Smalltalk, everything happens somewhere else.",
+    "time": "2018-05-18T22:12:03Z"
+  }
   // Customize the code below
   return (
     <div className="App">
@@ -20,7 +20,7 @@ function App() {
         <h1 className="App-title">Very cool timeline</h1>
       </header>
       <main className="App-main">
-      <TimelineEvent person={event.person} status={event.status} timestamp={event.timeStamp} />
+      <TimelineEvent person={event.person} status={event.status} time={event.time} />
       </main>
     </div>
   );
