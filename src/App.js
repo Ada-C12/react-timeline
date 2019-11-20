@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
+import TimelineEvent from './components/TimelineEvent';
+import Timestamp from './components/Timestamp';
 
 function App() {
   console.log(timelineData);
@@ -14,6 +16,8 @@ function App() {
         <h1 className="App-title">Application title</h1>
       </header>
       <main className="App-main">
+        <TimelineEvent person="Ada Lovelace" status ="I am the best coder!" time="2018-05-18T22:12:03Z"/>
+        <Timeline events={timelineData.events}/>
       </main>
     </div>
   );
