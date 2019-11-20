@@ -7,18 +7,18 @@ const Timeline = (props) => {
 
   const eventsMap = events.map((event,i) => {
     return (
-      <li key={i}>
+      <div key={i}>
         <TimelineEvent
           person={event.person}
           status={event.status}
-          time={event.timestamp}
+          time={event.timeStamp}
         />
-      </li>
+      </div>
     )
   });
 
   return (
-    <section>
+    <section className="timeline">
       <h4>{eventsMap}</h4>
     </section>
   );

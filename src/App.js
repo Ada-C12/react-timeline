@@ -13,10 +13,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">Ada Lovelace Sossh Meesh</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent person="Ada Lovelace" status ="I am the best coder!" time="2018-05-18T22:12:03Z"/>
         <Timeline events={timelineData.events}/>
       </main>
     </div>
