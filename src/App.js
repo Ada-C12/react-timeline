@@ -11,15 +11,6 @@ function App() {
 
 
   const allTimelines_array = <Timeline events={events}/>;
-
-  // let allTimelines = [];
-  // for (let event of events) {
-  //   console.log(event.person);
-  //   console.log(event.status);
-  //   console.log(event.timeStamp);
-  //   let singleTimeline = <Timeline person={event.person} status={event.status} timestamp={event.timeStamp}/>
-  //   allTimelines.push (singleTimeline);
-  // }
   
   console.log("FINAL:", allTimelines_array);
 
@@ -27,11 +18,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Talky Talk</h1>
+      <h1 className="App-title">{timelineData.person}'s Talky Talk</h1>
       </header>
+
       <main className="App-main">
 
-      <Timeline />
+      {allTimelines_array}
         
       </main>
     </div>
