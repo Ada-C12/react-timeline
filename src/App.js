@@ -7,8 +7,6 @@ import Timeline from './components/Timeline';
 function App() {
   console.log(timelineData);
 
-  const postData = {person: 'Mr. Magoo', status: 'I can\'t see, but I have places to go!'}
-
   // Customize the code below
   return (
     <div className="App">
@@ -17,7 +15,7 @@ function App() {
       </header>
       <main className="App-main">
       </main>
-      <Timeline person={postData.person} status={postData.status} timestamp={postData.time}/>
+      <Timeline person={timelineData.events[0].person} status={timelineData.events[0].status} timestamp={timelineData.events[0].timestamp}/>
     </div>
 
   );
