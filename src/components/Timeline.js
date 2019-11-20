@@ -9,7 +9,10 @@ const Timeline = (props) => {
 
   // map thru events, make a TimelineEvent component obj for each one
   let timelines = events.map ((event, i) => {
-    return <TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp}/>;
+    return (
+    <section key={i}>
+      <TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp}/>
+    </section>);
   });
 
   return timelines;
