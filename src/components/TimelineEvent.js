@@ -6,9 +6,8 @@ const TimelineEvent = (props) => {
   let person = props.person
   let status = props.status
   let timestamp = <Timestamp time={props.timestamp}/>
-  
   return(
-    <h2> {person} {status} {timestamp} </h2>
+    <h2> {person} {timestamp} {status} </h2>
   )
 
 }

@@ -4,9 +4,11 @@ import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 import TimelineEvent from './components/TimelineEvent';
+import myData from './data/timeline.json'
 
 function App() {
   console.log(timelineData);
+  console.log(myData)
 
   // Customize the code below
   return (
@@ -15,7 +17,9 @@ function App() {
         <h1 className="App-title">Ada Lovelace's Social Media Feed</h1>
       </header>
       <main className="App-main">
-        <TimelineEvent person="Emily" status="stuff" timestamp="01/01/1993"></TimelineEvent>
+        <ul>
+          <Timeline events={myData.events} />
+        </ul>
       </main>
     </div>
   );
