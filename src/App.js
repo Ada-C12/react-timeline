@@ -8,6 +8,8 @@ import TimelineEvent from './components/TimelineEvent';
 function App() {
   console.log(timelineData);
 
+  const userName = timelineData.person
+
   const timelineEvents = timelineData.events.map((event, i) => {
     return (
       <TimelineEvent key={i} person={event.person} status={event.status} time={event.time} />
@@ -18,7 +20,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">{userName}'s Timeline</h1>
       </header>
       <main className="App-main">
         <Timeline events={timelineEvents} />
