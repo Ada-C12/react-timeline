@@ -6,12 +6,9 @@ const Timeline = (props) => {
   let timelines = [];
   let events = props.events;
 
-  for (let event of events) {
-    let singleEvent = <TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp}/>;
-    
-    timelines.push(singleEvent);
-  }
-
+  timelines = events.map ((event, i) => {
+    return <TimelineEvent person={event.person} status={event.status} timeStamp={event.timeStamp}/>;
+  });
 
   return timelines;
 }
