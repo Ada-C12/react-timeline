@@ -5,7 +5,7 @@ import TimelineEvent from './TimelineEvent';
 const Timeline = (props) => {
   
   return (
-    <TimelineEvent person="Your Mom"/>
+    <TimelineEvent person={props.person} status={props.status}/>
   );
 }
 
