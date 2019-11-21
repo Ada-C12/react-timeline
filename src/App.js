@@ -17,7 +17,7 @@ function App() {
         <h1 className="App-title">{timelineData.person}'s Social Media Feed</h1>
       </header>
       <main className="App-main">
-      <TimelineEvent person='Adele Goldberg' status='In Smalltalk, everything happens somewhere else.' timeStamp='2019-11-20T08:12:03Z'  />
+      <Timeline events={events} />
       </main>
     </div>
   );
