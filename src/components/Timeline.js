@@ -13,7 +13,7 @@ const Timeline = (props) => {
   });
 
   return (
-    <ul className="timelineEvent-collection">
+    <ul className="timeline">
       {timelineEventComponents}
     </ul>
   );
