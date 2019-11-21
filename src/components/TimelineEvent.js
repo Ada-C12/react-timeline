@@ -3,10 +3,10 @@ import './TimelineEvent.css';
 import Timestamp from './Timestamp';
 
 const TimelineEvent = ({person, status, timeStamp}) =>
-    <div>
-      <p>Person: {person} </p>
-      <p>Status: {status} </p>
-      <Timestamp time={timeStamp}/>
+    <div className='timeline-event'>
+      <p className='event-person'> {person} </p>
+      <p className='event-status'> {status} </p>
+      <p className='event-time'><Timestamp time={timeStamp}/></p>
     </div>
 
 
