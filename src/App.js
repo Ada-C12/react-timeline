@@ -15,7 +15,8 @@ function App() {
       </header>
       <main className="App-main">
       </main>
-      <Timeline person={timelineData.events[0].person} status={timelineData.events[0].status} timestamp={timelineData.events[0].timestamp}/>
+
+      <Timeline events={timelineData.events}/>
     </div>
 
   );

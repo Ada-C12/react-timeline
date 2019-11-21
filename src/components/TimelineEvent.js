@@ -8,7 +8,7 @@ const TimelineEvent = (props) => {
     <div>
     <p>{props.person}</p>
     <p>{props.status}</p>
-    <Timestamp time={Date.now()} />
+    <Timestamp time={props.timestamp}/>
     </div>
   );
 }
