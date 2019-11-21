@@ -12,6 +12,8 @@ function App() {
     "status": "In Smalltalk, everything happens somewhere else.",
     "time": "2018-05-18T22:12:03Z"
   }
+  const events = timelineData;
+
   // Customize the code below
   return (
     <div className="App">
@@ -19,7 +21,8 @@ function App() {
         <h1 className="App-title">Application title</h1>
       </header>
       <main className="App-main">
-      <TimelineEvent person={event.person} status={event.status} time={event.timeStamp}/>
+      {/* <TimelineEvent person={event.person} status={event.status} time={event.timeStamp}/> */}
+      <Timeline/>
       </main>
     </div>
   );
