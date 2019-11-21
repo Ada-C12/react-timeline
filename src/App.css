@@ -46,9 +46,9 @@
 }
 
 .emojis_parent_container {
-  background-color: pink;
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 3fr;
+  direction: rtl;
 }
 
 .emoji {

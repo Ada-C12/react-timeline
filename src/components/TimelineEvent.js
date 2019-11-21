@@ -21,7 +21,7 @@ const TimelineEvent = (event) => {
       <section className="status">{status}</section>
 
       <section className="emojis_parent_container">
-        <section>shit idk...</section>
+        
         <section className="emoji_with_counter"> 
           <section className = "emoji">:-)</section>
           <section className = "counter">counter</section>
