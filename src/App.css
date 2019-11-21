@@ -16,19 +16,19 @@
   background-color: rgb(175, 221, 240);
 }
 
-.singlePost {
+.single_post {
   background-color: #E6ECF0;
   margin: 1em;
   padding: 2em;
 }
 
-.topLine {
+.top_line {
   display: grid;
   margin-bottom: 1em;;
   grid-template-columns: 1fr 1fr;
 }
 
-.topLine * {
+.top_line * {
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -43,4 +43,19 @@
 
 .status {
 
+}
+
+.emojis_parent_container {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+.emoji {
+
+}
+
+.emoji_with_counter {
+  background-color: aquamarine;
+  display: flex;
 }

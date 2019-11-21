@@ -11,12 +11,33 @@ const TimelineEvent = (event) => {
 
   // Take passed in data and make bulleted list JSX.  this is going back to Timeline.js, then App.js
   return(
-    <section className="singlePost">
-      <section className="topLine">
+    <section className="single_post">
+
+      <section className="top_line">
         <section className="person">{person}</section>
         <section className="timeStamp">{timestamp}</section>
       </section>
+
       <section className="status">{status}</section>
+
+      <section className="emojis_parent_container">
+        <section>shit idk...</section>
+        <section className="emoji_with_counter"> 
+          <section className = "emoji">:-)</section>
+          <section className = "counter">counter</section>
+        </section>
+
+        <section className="emoji_with_counter"> 
+          <section className = "emoji">:-|</section>
+          <section className = "counter">counter</section>
+        </section>
+
+        <section className="emoji_with_counter"> 
+          <section className = "emoji">:-(</section>
+          <section className = "counter">counter</section>
+        </section>
+      </section>
+
     </section>
   );
 }
