@@ -11,6 +11,11 @@
   font-size: 1.5em;
 }
 
+.App-logo {
+  height: 5vmin;
+  float: right;
+}
+
 .App-main {
   padding-top: 7rem;
   background-color: #E6ECF0;

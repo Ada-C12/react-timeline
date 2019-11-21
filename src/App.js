@@ -16,6 +16,7 @@ function App() {
       <header className="App-header">
         <h1 className="App-title">
           {timelineData['person']}'s Timeline
+          <img src={logo} className="App-logo" alt="logo" />
         </h1>
       </header>
 
