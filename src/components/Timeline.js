@@ -4,7 +4,7 @@ import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
 
-props.events.map((event, i) => {
+const eventComponents = props.events.map((event, i) => {
 
   return (
     <div key={i}>
@@ -12,5 +12,7 @@ props.events.map((event, i) => {
     </div>
   );
 });
+
+return eventComponents;
 }
 export default Timeline;

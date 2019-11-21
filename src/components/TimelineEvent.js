@@ -4,7 +4,7 @@ import Timestamp from './Timestamp';
 
 const TimelineEvent = (props) => {
   
-  return(
+  return (
     <div>
     <p>{props.person}</p>
     <p>{props.status}</p>
