@@ -5,7 +5,7 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 function App() {
-  // started with timelineData from json
+  // STARTING with timelineData from json
   // console.log(timelineData);
 
   // take the events which is an array of single event hashes, send it off to Timeline component for processing
@@ -14,7 +14,7 @@ function App() {
   
   // console.log("FINAL:", allTimelines_array);
 
-  // Customize the code below
+  
   return (
     <div className="App">
       <header className="App-header">

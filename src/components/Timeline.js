@@ -3,7 +3,7 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
-  // carrying in the attr called events from props
+  // carrying in the attr called events from props from App.js
   // events is an array of single event hashes
   let events = props.events;
 
