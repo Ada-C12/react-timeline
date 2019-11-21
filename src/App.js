@@ -1,28 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import timelineData from './data/timeline.json';
-// import Timeline from './components/Timeline';
-import TimelineEvent from './components/TimelineEvent';
+import eventsData from './data/timeline.json';
+import Timeline from './components/Timeline';
 
 function App() {
-  console.log(timelineData);
+  console.log(eventsData);
   
-  const eventsList = [
-    {
-      person: "Adele Goldberg",
-      status: "In Smalltalk, everything happens somewhere else.",
-      timeStamp: "2018-05-18T22:12:03Z"
-    },
-];
-
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">{eventsData.person}'s Social Media Feed</h1>
       </header>
       <main className="App-main">
-        <div> <TimelineEvent event={eventsList[0]}/></div>
+        <div> <Timeline/></div>
       </main>
     </div>
   );

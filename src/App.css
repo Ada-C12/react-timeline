@@ -13,5 +13,30 @@
 
 .App-main {
   padding-top: 7rem;
-  background-color: #E6ECF0;
+  background-color: lemonchiffon;
 }
+
+.Tweet{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: pink;
+  margin-right: 150px;
+  margin-left: 80px;
+  margin-bottom: 1%;
+}
+.tweetHeader{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Date{
+  text-align: right;
+}
+
+section p {
+  margin-left: 10px;
+}
+
+

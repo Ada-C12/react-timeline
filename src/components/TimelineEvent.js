@@ -4,13 +4,14 @@ import Timestamp from './Timestamp';
 
 const TimelineEvent = (props) => {
   return (
-    <div>
-      <li>{ props.event.person }</li>
-      <li>{ props.event.status }</li>
-      <li><Timestamp time={props.event.timeStamp}/></li>
-    </div>
+    <section className="Tweet">
+      <div className="tweetHeader">
+        <h1>{ props.person }</h1>
+        <h3 className="Date"><Timestamp time={props.timeStamp}/></h3>
+      </div>
+      <p>{ props.status }</p>
+    </section>
   );
 };
-
 
 export default TimelineEvent;
