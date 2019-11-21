@@ -8,13 +8,21 @@ function App() {
   console.log(timelineData);
 
   // Customize the code below
+  const eventsData = timelineData['events']
+  
   return (
     <div className="App">
+
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">
+          {timelineData['person']}'s Timeline
+        </h1>
       </header>
+
       <main className="App-main">
+        <Timeline allEvents={eventsData}/>
       </main>
+
     </div>
   );
 }
