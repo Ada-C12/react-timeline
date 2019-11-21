@@ -7,13 +7,17 @@ import Timeline from './components/Timeline';
 function App() {
   console.log(timelineData);
 
+  const jsonEvents = timelineData.events;
   // Customize the code below
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">Very cool timeline</h1>
       </header>
       <main className="App-main">
+      <section className="timeline">
+      <Timeline events= {jsonEvents} />
+      </section>
       </main>
     </div>
   );
