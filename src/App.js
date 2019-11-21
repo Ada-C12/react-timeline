@@ -13,7 +13,7 @@ function App() {
       <TimelineEvent
         person={event.person}
         status={event.status}
-        time={event.timestamp}
+        time={event.timeStamp}
       />
     );
   });
