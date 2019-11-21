@@ -16,7 +16,7 @@ const Timeline = props => {
   });
 
   return (
-    <ul className="timeline-events">
+    <ul>
       <li>{printEvents}</li>
     </ul>
   );

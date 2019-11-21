@@ -3,27 +3,3 @@
   margin: auto;
   text-align: left;
 }
-
-.timeline-events{
-  background-color: #fcfcfc;
-  margin: 2rem;
-  list-style-type: none;
-}
-
-.singleTimelineEvent{
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  border-bottom: 1px solid lightgrey;
-  padding: 1rem;
-  margin: .5rem;
-  margin-right: 2rem;
-}
-
-.timeStamp{
-  text-align: right;
-}
-
-.status{
-  grid-column: 1 / span 2;
-}
