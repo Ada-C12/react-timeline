@@ -9,9 +9,11 @@ const Timeline = (props) => {
 
   const timelineEventComponents = props.events.map((event, i) => {
     return (
-      <ul key={i}>
-        <li><TimelineEvent person={ event.person } status={ event.status } timestamp={ event.timeStamp } /></li>
-      </ul>
+      <div>
+        <ul key={i}>
+          <li><TimelineEvent person={ event.person } status={ event.status } timestamp={ event.timeStamp } /></li>
+        </ul>
+      </div>
     );
   });
 
