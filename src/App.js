@@ -4,7 +4,6 @@ import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
-
 function App() {
   const eventsList = [
       {
@@ -23,9 +22,9 @@ function App() {
         timeStamp: "2018-05-18T22:41:19Z"
       },
   ];
+
   console.log(timelineData);
   
-
   // Customize the code below
   return (
     <div className="App">

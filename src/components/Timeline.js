@@ -3,13 +3,13 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 import Timestamp from './Timestamp';
 
-
 const Timeline = (props) => {
 
   return (
     <div>
       <Timestamp event={props.events[0]}/>
       <Timestamp event={props.events[1]}/>
+      <Timestamp event={props.events[2]}/>
     </div>
 );
 };
