@@ -13,10 +13,10 @@ const TimelineEvent = (props) => {
   
   
   return (
-  <div>
-    <p>{props.person}</p>
-    <p>{props.status}</p>
-    <p><Timestamp time={props.timestamp} /></p>
+  <div className='timeline-event'>
+    <p className='event-person'>{props.person}</p>
+    <p className='event-status'>{props.status}</p>
+    <p className='event-time'><Timestamp time={props.timestamp} /></p>
   </div>
   )
 };
