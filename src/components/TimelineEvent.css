@@ -25,3 +25,7 @@
   margin-top: 0.5rem;
   text-align: right;
 }
+
+ul {
+  list-style: none;
+}
