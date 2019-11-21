@@ -5,11 +5,10 @@ import Timestamp from './Timestamp';
 const TimelineEvent = (props) => {
   
   return (
-    <div>TimelineEvent
+    <div>
       <h3>{props.person}</h3>
       <h3>{props.status}</h3>
-      <h3>{props.timestamp}</h3>
-      {/* use the existing timestamp component to render the time and date of the event */}
+      <h3><Timestamp time={props.timestamp}/></h3>
     </div>
   );
 }
