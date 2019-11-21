@@ -1,19 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import timelineData from './data/timeline.json';
+import eventsData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 function App() {
-  console.log(timelineData);
-
-  // Customize the code below
+  console.log(eventsData);
+  
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">{eventsData.person}'s Social Media Feed</h1>
       </header>
       <main className="App-main">
+        <div> <Timeline/></div>
       </main>
     </div>
   );
