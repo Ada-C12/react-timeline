@@ -8,11 +8,11 @@ const Timeline = (prop) => {
       <TimelineEvent key={i}
       person={ event.person } 
       status={ event.status } 
-      timestamp={ event.timestamp } />
+      timestamp={ event.timeStamp } />
     );
   });
   return (
-    <ul className="student-collection">
+    <ul className="timeline">
       {events}
     </ul>
   );
