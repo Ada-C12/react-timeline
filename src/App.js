@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+        <h1 className="App-title">Ada's Application</h1>
       </header>
       <main className="App-main">
       {/* <TimelineEvent person={event.person} status={event.status} time={event.timeStamp}/> */}

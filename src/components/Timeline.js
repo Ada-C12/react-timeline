@@ -8,7 +8,7 @@ const Timeline = () => {
 
   const timeLine = events.map((event, i) => {
     return (
-      <div>
+      <div className="timeLine">
         <p key={i}>
         <TimelineEvent person={event.person} status={event.status} time={event.timeStamp}/>
         </p>
