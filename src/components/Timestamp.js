@@ -7,7 +7,7 @@ const Timestamp = (props) => {
   const relative = time.fromNow();
 
   return (
-    <span title={absolute}>{relative}</span>
+    <span title={absolute} className="event-time">{relative}</span>
   );
 };
 
