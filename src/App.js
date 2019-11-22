@@ -5,15 +5,28 @@ import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
 function App() {
-  console.log(timelineData);
+  // STARTING with timelineData from json
+  // console.log(timelineData);
 
-  // Customize the code below
+  // take the events which is an array of single event hashes, send it off to Timeline component for processing
+  const events = timelineData.events;
+  const allTimelines_array = <Timeline events={events}/>;
+  
+  // console.log("FINAL:", allTimelines_array);
+
+  
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">Application title</h1>
+      <h1 className="App-title">{timelineData.person}'s Talky Talk</h1>
       </header>
+
       <main className="App-main">
+
+      {allTimelines_array}
+
+      <img src={logo} alt="logo" />
+        
       </main>
     </div>
   );

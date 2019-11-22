@@ -8,10 +8,66 @@
 
 .App-title {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .App-main {
   padding-top: 7rem;
+  background-color: rgb(175, 221, 240);
+}
+
+.single_post {
   background-color: #E6ECF0;
+  margin: 1em;
+  padding: 2em;
+}
+
+.top_line {
+  display: grid;
+  margin-bottom: 1em;;
+  grid-template-columns: 1fr 1fr;
+}
+
+.top_line * {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.person {
+
+}
+
+.timeStamp {
+  text-align: right;
+}
+
+.status {
+
+}
+
+.emojis_parent_container {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr;
+  margin-top: 0.5rem;
+}
+
+.emoji {
+  padding-left: 0.3rem;
+}
+
+.emoji:hover {
+  border: 1px solid blue;
+}
+
+.emoji_with_counter {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1rem;
+  padding-left: 3rem;
+  align-items: center;
+}
+
+.emoji_with_counter * {
+  text-align: right;
 }
