@@ -8,14 +8,10 @@ const TimelineEvent = (props) => {
 
   function callAlert(e) {
     e.preventDefault();
-    const buildIncrementer = () => {
-      clickCount += 1;
-      document.getElementById('click-count-span').textContent = clickCount;
-      return clickCount;  
-    }
-    return buildIncrementer();
+    clickCount += 1;
+    document.getElementById(props.timestamp).textContent = " You liked this " + clickCount + " times";
+    return clickCount;  
   }
-  // let incrementer = callAlert;
   return (
     <div className="timeline-event">
       <p className="event-person">
@@ -29,10 +25,8 @@ const TimelineEvent = (props) => {
       </p>
       <p className="event-like-button">
         <img onClick={callAlert} className="thumb" src={thumbsUp} alt="thumbs up" />
-        <span>
-          You liked this <span id="click-count-span">
-          
-          </span> times
+        <span id={props.timestamp}>
+
         </span>
       </p>
     </div>
