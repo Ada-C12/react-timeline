@@ -12,8 +12,7 @@ const TimelineEvent = (props) => {
       <p className="event-time"> {timestamp}</p>
       <p className="event-status"> {status}</p>
     </section>
-  )
-
-}
+  );
+};
 
 export default TimelineEvent;
