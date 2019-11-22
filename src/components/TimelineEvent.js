@@ -22,12 +22,12 @@ const TimelineEvent = (event) => {
       <section className="status">{status}</section>
 
       <section className="emojis_parent_container">
+        
         <section></section>
         
+        {/* Emojis are generated anew with each load, I did NOT save voting history, also did NOT validate against multiple votes from same person (would prob require user login or session data) */}
         <Emoji iconName="grinning"/>
-
         <Emoji iconName="neutral_face"/>
-
         <Emoji iconName="rage"/>
         
       </section>
