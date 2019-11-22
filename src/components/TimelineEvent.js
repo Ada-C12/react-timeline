@@ -1,6 +1,7 @@
 import React from 'react';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
+import Emoji from 'node-emoji'
 
 const TimelineEvent = (event) => {
   // props is passed in via line 14 in Timeline.js, use it to make new new TimelineEvent Component obj
@@ -21,20 +22,21 @@ const TimelineEvent = (event) => {
       <section className="status">{status}</section>
 
       <section className="emojis_parent_container">
+        <section></section>
         
         <section className="emoji_with_counter"> 
-          <section className = "emoji">:-)</section>
-          <section className = "counter">counter</section>
+          <section className = "emoji">{Emoji.get('grinning')}</section>
+          <section className = "counter">0</section>
         </section>
 
         <section className="emoji_with_counter"> 
-          <section className = "emoji">:-|</section>
-          <section className = "counter">counter</section>
+          <section className = "emoji">{Emoji.get('neutral_face')}</section>
+          <section className = "counter">0</section>
         </section>
 
         <section className="emoji_with_counter"> 
-          <section className = "emoji">:-(</section>
-          <section className = "counter">counter</section>
+          <section className = "emoji">{Emoji.get('rage')}</section>
+          <section className = "counter">0</section>
         </section>
       </section>
 
