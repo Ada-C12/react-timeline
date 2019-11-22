@@ -51,9 +51,12 @@
   margin-top: 0.5rem;
 }
 
+.emoji {
+  padding-left: 0.3rem;
+}
+
 .emoji:hover {
   border: 1px solid blue;
-  padding-left: 0.3rem;
 }
 
 .emoji_with_counter {

@@ -1,8 +1,6 @@
 import React from 'react';
 import './TimelineEvent.css';
 import Timestamp from './Timestamp';
-
-import Node_emoji from 'node-emoji'
 import Emoji from './Emoji';
 
 const TimelineEvent = (event) => {
@@ -11,12 +9,6 @@ const TimelineEvent = (event) => {
   const timestamp = <Timestamp time={event.timeStamp} />;
   const person = event.person;
   const status = event.status;
-
-  let grinCount = () => {
-    console.log("ok");
-    
-  };
-
 
   // Take passed in data and make bulleted list JSX.  this is going back to Timeline.js, then App.js
   return(

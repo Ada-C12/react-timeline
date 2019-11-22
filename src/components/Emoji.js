@@ -13,7 +13,11 @@ class Emoji extends React.Component {
   }  
   
   increaseCount() {  
-    this.setState({ count: this.state++ });  
+    console.log("casting vote for", this.icon);
+
+    // Getting warning about mutating state directly, not cov'd in lecture yet
+    this.state.count ++;
+    this.setState({ count: this.state.count }); 
   }
 
   render() {  
