@@ -3,9 +3,16 @@ import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
 
 const Timeline = (props) => {
+  console.log(props.events)
   return (
-    <h3>{events}</h3>
+    props.events.map((event) => (
+      <TimelineEvent
+         person={event.person}
+         status={event.status}
+         timestamp={event.timestamp}
+      />
+    ))
   )
-}
+  }
 
 export default Timeline;
