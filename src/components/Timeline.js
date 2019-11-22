@@ -1,12 +1,10 @@
 import React from 'react';
 import './Timeline.css';
 import TimelineEvent from './TimelineEvent';
-import timelineData from '../data/timeline.json'
 
-const Timeline = () => {
-  const events = timelineData.events;
+const Timeline = (props) => {
 
-const timeLine = events.map((event, i) => {
+const timeLine = (props.messages.events).map((event, i) => {
   return (
     <div class="timeline">
     <p key={i}>

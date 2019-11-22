@@ -13,7 +13,7 @@ function App() {
         <h1 className="App-title">Sams's social media feed</h1>
       </header>
       <main className="App-main">
-      <Timeline/>
+      <Timeline messages={timelineData}/>
       </main>
     </div>
   );
