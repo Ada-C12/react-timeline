@@ -1,0 +1,20 @@
+.button {
+  font-size: 0.8rem;
+  border-radius: 0.4rem;
+  padding: 0.37rem 0.4rem;
+  border-color: #E6ECF0;
+  margin: 0.1rem;
+}
+
+.button .icon {
+  color: #0BD3AC;
+}
+
+.button:hover {
+  background-color: #0BD3AC;
+  border: 1px solid #0BD3AC;
+}
+
+.button:hover .icon {
+  color: white;
+}

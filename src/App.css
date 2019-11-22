@@ -15,3 +15,11 @@
   padding-top: 7rem;
   background-color: #E6ECF0;
 }
+
+.site-logo {
+  width: 4rem;
+  height: 4rem;
+  float: left;
+  /* cancel out rightward push on App-title */
+  margin-right: -4rem;
+}
