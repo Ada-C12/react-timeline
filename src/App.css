@@ -14,4 +14,7 @@
 .App-main {
   padding-top: 7rem;
   background-color: #E6ECF0;
+  display: flex;
+  align-content: center;
 }
+
